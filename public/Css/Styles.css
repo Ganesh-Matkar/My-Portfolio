@@ -1,0 +1,211 @@
+/*----------------------------------Global Styles------------------------------------*/
+
+h3{
+    color: rgb(30, 60, 124);
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h5{
+    color: rgb(80, 132, 245);
+    font-family: 'Fjalla One', sans-serif;
+    display: inline;
+}
+
+p{
+    color: rgb(13, 22, 43);
+    font-family: 'Cabin', sans-serif;
+}
+
+.contentHeading {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(43, 66, 116);
+    padding: 5%;
+    text-align: center;
+}
+
+/*----------------------------------Header Styles------------------------------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #81DCFF;
+    margin: 0;
+    width: 100%;
+}
+
+.logo{
+    margin: 0 5%;
+    width: 10%;
+    height: 100%;
+}
+
+.navlink{
+    font-weight: bold;
+    margin: 10px 20px;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+}
+
+/*----------------------------------Home Page Styles------------------------------------*/
+
+.homeImage{
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    opacity: 50%;
+}
+
+.codingImage{
+    width:50vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+    top:20%;
+    right: 0;
+}
+
+.homeHeading{
+    color: rgb(10, 19, 41);
+    font-weight: bold;
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif;
+    width: 50vw;
+    left: 0;
+    top:30%;
+    text-align: center;
+}
+
+.homeHeading h1{
+    font-size: 4.5rem;
+}
+
+.homeHeading h3{
+    font-size: 2rem;
+}
+
+.home{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+/*----------------------------------About Page Styles------------------------------------*/
+
+.about{
+    text-align: center;
+    padding: 0 10% 5% ;
+}
+
+.myImage{
+    float: left;
+    width: 350px;
+    height: 350x;
+    margin: 0 5%;
+}
+
+.aboutMyself{
+    text-align: left;
+    margin: 5% 10%;
+    line-height: 2;
+    color: rgb(88, 114, 153);
+}
+
+/*----------------------------------Skills Page Styles------------------------------------*/
+
+.skills{
+    background-color: #81DCFF;
+    text-align: center;
+    padding: 0 0 5%;
+}
+
+progress{
+    width: 40%;
+    height: 30px;
+}
+
+.skills h3{
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    height: 5%;
+}
+
+/*----------------------------------Qualification Page Styles------------------------------------*/
+
+.qualification{
+    margin: 0;
+    padding: 0 10% 5% 10% ;
+    text-align: center;
+}
+
+.card{
+    margin:10% 5%;
+}
+
+.card-header{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(61, 114, 228);
+    background-color:#99E6FE ;
+}
+
+.card-body{
+    font-size: 1.5rem;
+    color:rgb(22, 66, 117);
+    background-color: #99E6FE;
+}
+
+/*----------------------------------Footer Styles------------------------------------*/
+
+.footer{
+    background-color: #81DCFF;
+    margin: 0;
+    padding: 0 10% 2% 10%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.footer p{
+    display: inline;
+}
+
+i{
+    margin: 2%;
+    color:rgb(30, 60, 124);
+}
+
+/*----------------------------------Styles Depending Upon Media------------------------------------*/
+
+@media(max-width:990px){
+    .skills h3{
+        width: 40%;
+    }
+    .myImage{
+        float: none;
+    }
+    .homeHeading{
+        top:0;
+        text-align: center;
+        z-index: 2;
+        width: 100%;
+    }
+    .homeHeading h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .homeHeading h3{
+        font-size: 2rem;
+    }
+    .codingImage{
+        width: 100%;
+    }
+    .header {
+        position:unset;
+    }
+}
